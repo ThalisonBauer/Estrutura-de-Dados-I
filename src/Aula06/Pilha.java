@@ -6,6 +6,10 @@ package Aula06;
 public class Pilha {
     int vetor[] = new int[10];
     int topo;
+        public void isInit()
+        {
+            this.topo=-1;
+        }
         public void isEmpty()
         {
             if(topo == -1)
@@ -23,11 +27,6 @@ public class Pilha {
             }
             else
                 System.out.println("A PILHA NAO ESTA CHEIA");
-        }
-
-        public void isInit()
-        {
-            this.topo=-1;
         }
         public boolean push(int valor)
         {
@@ -53,7 +52,8 @@ public class Pilha {
         }
         public int top()
         {
-            return vetor[topo];
+            int cavao = vetor[topo];
+            return cavao;
         }
         public int pull(int num)
         {
