@@ -50,6 +50,7 @@ public class Pilha {
                 System.out.println("A PILHA ESTA VAZIA");
             return false;
         }
+
         public int top()
         {
             int cavao = vetor[topo];
