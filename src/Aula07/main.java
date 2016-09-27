@@ -34,24 +34,28 @@ public class main {
                 case 2:
                 {
                     Carro carro = new Carro();
+                    Carro r;
                     System.out.println("INFORME A PLACA DO CARRO PARA RETIRADA");
                     carro.placa = tc.next();
-                    for(int i=0;i==interno.topo;i++)
+                    for(int i=interno.topo;i>0;i--)
                     {
-                        Carro r ;
-                        r=interno.dellCarro(); r.n_manobras++;
+                        r=interno.vagas[i];
+
                         if(r.placa.equalsIgnoreCase(carro.placa))
                         {
+
                             System.out.println("CARRO REMOVIDO");
+                            interno.topo--;
+                            break;
                         }
                         else
                         {
+                            r=interno.dellCarro(); r.n_manobras++;
                             externo.addCarro(r);r.n_manobras++;
                         }
                     }
                     for(int i=0;i==externo.topo;i++)
                     {
-                        Carro r;
                         r = externo.dellCarro(); r.n_manobras++;
                         interno.addCarro(r); r.n_manobras++;
                     }
