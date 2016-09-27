@@ -1,5 +1,5 @@
 package Aula09;
-/*public class Exercicio01 {
+public class Exercicio01 {
     int topo;
     int [] vet = new int[10];
     public boolean push(int a)
@@ -30,4 +30,3 @@ package Aula09;
         }
     }
 }
-*/
