@@ -1,4 +1,4 @@
-package Aula09;
+/*package Aula09;
 public class Exercicio01 {
     int topo;
     int [] vet = new int[10];
@@ -29,4 +29,4 @@ public class Exercicio01 {
             return true;
         }
     }
-}
+}*/
