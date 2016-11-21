@@ -1,8 +1,5 @@
 package Aula05;
 
-import java.awt.*;
-import java.io.StringReader;
-
 /**
  * Created by Thalison Bauer on 23/08/2016.
  */

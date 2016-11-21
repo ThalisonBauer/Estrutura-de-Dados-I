@@ -1,8 +1,5 @@
 package Aula12;
 
-/**
- * Created by Thalison Bauer on 25/10/2016.
- */
 public class Lista {
     Elemento inicio;
     Elemento fim;
@@ -51,6 +48,7 @@ public class Lista {
         if (this.qtd > 1){
             aux = this.inicio;
             this.inicio = aux.proximo;
+            this.qtd--;
         }else if(this.qtd == 1){
             aux = this.inicio;
             this.inicio = null;
@@ -60,10 +58,42 @@ public class Lista {
         }
     }
     public void remFim(){
+        Elemento aux = inicio;
         if(this.inicio == null){
             System.out.println("Vazia");
         }else{
-            if(this.qtd==1)
+            if(this.qtd==1){
+                remInicio();
+            }else{
+                for(int i=0;i<this.qtd-1;i++) {
+                    aux = aux.proximo;
+                }
+                aux.proximo = null;
+                this.qtd--;
+            }
+        }
+    }
+    public void remPosition(int p){
+        Elemento aux = inicio;
+        Elemento ant = inicio;
+        if(this.inicio== null){
+            System.out.println("Vazio");
+        }else if(this.qtd==1){
+            remInicio();
+        }else if(p==qtd-1){
+            remFim();
+        }else{
+            for(int i = 0;i<p;i++){
+                ant = aux;
+                aux = aux.proximo;
+            }
+        }
+    }
+    public void list(){
+        Elemento aux = inicio;
+        for(int i=0;i<this.qtd;i++){
+        aux.mostrar();
+            aux = aux.proximo;
         }
     }
 

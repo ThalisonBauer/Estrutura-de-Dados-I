@@ -1,5 +1,5 @@
 package Aula11;
-import java.util.Random;
+
 public class Teste {
     public static void main(String[] args) {
         insertion inse = new insertion();

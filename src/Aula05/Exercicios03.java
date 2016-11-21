@@ -8,9 +8,9 @@ public class Exercicios03 {
     {
         int num = 19;
         if (par(num)==0)
-            System.out.printf("Numero é PAR");
+            System.out.println("Numero é PAR");
         else
-            System.out.printf("Numero é IMPAR");
+            System.out.println("Numero é IMPAR");
 
     }
     public  static int par(int num)

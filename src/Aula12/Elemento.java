@@ -1,9 +1,17 @@
 package Aula12;
+import java.util.Scanner;
 
-/**
- * Created by Thalison Bauer on 25/10/2016.
- */
 public class Elemento {
     int valor;
     Elemento proximo;
+
+    public  void ler(){
+        Scanner tc = new Scanner(System.in);
+        System.out.println("Informe um valor");
+        valor = tc.nextInt();
+    }
+    public void mostrar(){
+        System.out.println(this.valor);
+
+    }
 }
